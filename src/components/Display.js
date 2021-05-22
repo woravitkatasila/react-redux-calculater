@@ -5,7 +5,7 @@ class Display extends Component {
     return(
       <div>
         <div>
-       <h1>  ผลลัพธ์  {this.props.reusltPoint} </h1> 
+       <h1>    {this.props.reusltPoint} </h1> 
         </div>
       </div>
     );

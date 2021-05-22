@@ -1,0 +1,62 @@
+
+ .button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+$colorBtnPlus : blue;
+$colorBtnMinut : red;
+$colorMulti : green;
+$colorDivide : rgb(216, 216, 24);
+$colorWhite : white;
+$colorBlack : black;
+
+.contain{
+   text-align: center;
+   background-color: #7da1e9;
+   padding: 20px;
+    .contain-sub {
+        margin-top: 5%;
+        h1 {
+            color: $colorWhite;
+        }
+        input[type=number] ,input[type=text] {
+            width: 400px;
+            height: 60px;
+            font-size: 40px;
+            text-align: right;
+        }
+        #btnPlus {
+                @extend .button;
+            background-color: $colorBtnPlus;
+            color: $colorWhite;
+        }
+        #btnMinus {
+            @extend .button;
+        background-color: $colorBtnMinut;
+        color: $colorWhite;
+        }
+        #btnMulti {
+                @extend .button;
+            background-color: $colorMulti;
+            color: $colorWhite;
+        }
+        #btnDivide {
+            @extend .button;
+        background-color: $colorDivide;
+        color: $colorWhite;
+        }
+        #btnRusult {
+            @extend .button;
+        background-color: $colorWhite;
+        color: $colorBlack;
+        width: 280px;
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
-
+///// 2.> reducer  รับค่าจาก action ส่งไป store
 const PointReducer=(state={point:0}, action)=>{
     switch (action.type){
         case "setPoint":
@@ -19,6 +19,18 @@ const PointReducer=(state={point:0}, action)=>{
                 point:state.point-action.payload
             }
             break;
+        case "multi":
+        state={
+            ...state,
+            point: state.point*action.payload
+        }
+            break;
+        case "divide":
+            state={
+                ...state,
+                point: state.point/action.payload
+            }
+                break;
         default:
             return state;
     }
