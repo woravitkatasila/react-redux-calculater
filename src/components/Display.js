@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react'
+import { connect } from 'react-redux'
 
-class Display extends Component {
-  render(){
-    return(
-      <div>
-        <div>
-       <h1>    {this.props.reusltPoint} </h1> 
-        </div>
-      </div>
-    );
-  }
+const Display = (props) => {
+    return   <div>
+    <div>
+   <h1>    {props.PointReducer.point} </h1> 
+    </div>
+  </div>
 }
 
-export default Display;
+export default connect(
+    state => ({   PointReducer: state.PointReducer})
+)(Display)

@@ -38,4 +38,4 @@ const PointReducer=(state={point:0}, action)=>{
     return state;
 }
 
-export default {PointReducer}
+export default PointReducer
